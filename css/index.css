@@ -65,10 +65,34 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+/* start of code below this line */
+
 
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+header{
+    align-items:baseline; 
+    display:flex; 
+    justify-content:space-between;
+    margin: 2% 0;  
+}
+
+header nav{ 
+    width: 100%; 
+    display:flex; 
+    justify-content:space-around;
+}
+
+header nav a{
+    text-decoration: none; 
+    color: black; 
+}
+
+.Top-img{
+    margin: 2% 0; 
 }
 
 .top-content {
@@ -112,6 +136,46 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box1{
+    background-color: teal ;
+}
+
+.middle-content .boxes .box2{
+    background-color: gold;
+}
+
+.middle-content .boxes .box3{
+    background-color: cadetblue;
+}
+
+.middle-content .boxes .box4{
+    background-color: coral; 
+}
+
+.middle-content .boxes .box5{
+    background-color: crimson; 
+}
+
+.middle-content .boxes .box6{
+    background-color: forestgreen; 
+}
+
+.middle-content .boxes .box7{
+    background-color: darkorchid; 
+}
+
+.middle-content .boxes .box8{
+    background-color: hotpink; 
+}
+
+.middle-content .boxes .box9{
+    background-color: indigo; 
+}
+
+.middle-content .boxes .box10{
+    background-color: dodgerblue; 
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +207,56 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* about page css */ 
+.about-top{
+    border-bottom: 1px dashed black;
+    padding-bottom: 2%;
+}
+
+.about-txt{
+    margin: 0 2%;
+}
+
+.about-mid{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content:space-around;
+    margin: 3% 0;
+}
+
+.about-btm{
+    margin-bottom:4%;
+}
+
+.square{
+    width: 45%;
+    margin-bottom: 4%;
+    border-bottom: 1px dashed black;
+    padding-bottom: 4%;
+}
+
+.learnBtn{
+    padding: 2% 5%;
+    border: 2px solid black; 
+    background-color: white;
+    border-radius: 10px;  
+}
+
+/*animation for learn butto below*/ 
+
+.learnBtn:hover{
+    animation-name: Colors; 
+    animation-duration: 10s;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes Colors{
+    0% {background-color:cyan; }
+    20% {background-color: aquamarine;}
+    40% {background-color: palevioletred;}
+    60% {background-color: salmon;}
+    80% {background-color: skyblue;}
+    100% {background-color: darkcyan;}
 }
